@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Nueva Generación</title>
+    <!-- Enlaces para que funcione como aplicación nativa (PWA) -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#121212">
+    <style>
+        body { 
+            background-color: #121212; 
+            color: #ffffff; 
+            font-family: sans-serif; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh; 
+            margin: 0; 
+        }
+        h1 { font-size: 1.5rem; margin-bottom: 10px; text-align: center; }
+        p { font-size: 0.9rem; color: #aaaaaa; margin-bottom: 30px; text-align: center; max-width: 80%; }
+        audio { width: 300px; outline: none; }
+    </style>
+</head>
+<body>
+    <h1>Radio Nueva Generación</h1>
+    <p>Señal de bajo consumo. Presiona Play para escuchar en vivo.</p>
+    
+    <!-- El atributo preload="none" es la clave para no consumir datos de ETECSA antes de tiempo -->
+    <audio controls preload="none">
+        <source src="https://stream.zeno.fm/7vqcpgcvkz7tv" type="audio/aac">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+</body>
+</html>
